@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- CSS style -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <h1>Login</h1>
+    <div class = "form3">
+        <form id = "staffLogin" action="config/user_login_config.php" method="POST">
+            <table class="GeneratedTable">
+                <tbody>
+                <tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>
+                <tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>
+
+                <tr>
+                    <td>User Name: </td>
+                    <td><input class="userInput" type="text" id="userName" name="userName" placeholder="Username" required></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input class="userInput" type="password" id="password" name="password" placeholder="Password" required></td>
+                </tr>
+
+                </tbody>
+                </table>
+
+                <br />
+                <button type="reset" name="clearBtn">Clear</button>
+                <button type="submit" name="loginBtn">Log In</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>

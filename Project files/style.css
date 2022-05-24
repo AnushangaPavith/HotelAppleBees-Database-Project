@@ -1,0 +1,227 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.GeneratedTable {
+    font-size: 16px;
+    text-align: left;
+    width:45%;
+    background-color:#FFFFFF;
+    border-collapse:collapse;
+    border-width:1px;
+    border-color:#ffffff;
+    border-style:solid;
+    color:#000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+    border-width:1px;
+    border-color:#00000000;
+    border-style:solid;
+    padding:3px;
+}
+
+.GeneratedTable thead {
+    background-color:#FFFFFF;
+}
+
+.SearchTable {
+    font-size: 16px;
+    text-align: left;
+    width: 45%;
+    background-color:#ffffff;
+    border-collapse:collapse;
+    border-width:1px;
+    border-color:#ffffff;
+    border-style:solid;
+    color:#000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+.SearchTable td, .SearchTable th {
+    border-width:1px;
+    border-color:#00000000;
+    border-style:solid;
+    padding:3px;
+    font-size: 16px;
+}
+.SearchTable thead {
+    background-color:#FFFFFF;
+}
+
+input {
+    width: 400px;
+}
+.deleteInput {
+    width: 200px;
+    font-size: 16px;
+}
+.userInput {
+    width: 300px;
+    font-size: 16px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #1f7d03;
+    border-radius:35px;
+    font-size: 18px;
+    border: 0px solid #2d63c8;
+    padding: 6px 35px;
+    cursor: pointer
+}
+button:hover {
+    color: #ffffff;
+    background-color: #0a6302;
+}
+.searchBtn {
+    color: #ffffff;
+    background-color: #1f7d03;
+    width: 150px;
+    border-radius:5px;
+    font-size: 16px;
+    border: 0px solid #2d63c8;
+    padding: 6px 35px;
+    cursor: pointer
+}
+.deleteBtn {
+    color: #ffffff;
+    background-color: #ff0000;
+    width: 150px;
+    border-radius:5px;
+    font-size: 16px;
+    border: 0px solid #2d63c8;
+    padding: 6px 35px;
+    cursor: pointer
+}
+.deleteBtn:hover {
+    color: #ffffff;
+    background-color: #d0312d;
+}
+.searchBtn:hover {
+    color: #ffffff;
+    background-color: #0a6302;
+}
+.roomBtn {
+    color: #ffffff;
+    border-radius:8px;
+    font-size: 16px;
+    border: 0px solid #2d63c8;
+    padding: 6px 35px;
+    cursor: pointer
+}
+
+/* For Header */
+li, .headerA, .headerButton{
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header {
+    box-sizing: border-box;
+    background-color: #24252a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-left: 0;
+    padding-right: 2%;
+}
+
+.logo {
+    cursor: pointer;
+    width: 150px;
+}
+.navLinks {
+    list-style: none;
+}
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navLinks li .headerA {
+    transition: all 0.3s ease 0s;
+}
+.navLinks li .headerA:hover {
+    color: #0088a9;
+}
+.headerButton {
+    padding: 9px 25px;
+    border: none;
+    background-color: rgb(36, 36, 36);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+/* End Header */
+
+/* Food Tabs */
+.tabsArray {
+    margin: 40px;
+}
+.tabButton {
+    width: 160px;
+    color: #000000;
+    background-color: #cac8c8;
+    border-radius:3px;
+    font-size: 18px;
+    border: 0px solid #2d63c8;
+    padding: 6px 35px;
+    cursor: pointer
+}
+.tabButton:hover {
+    color: #ffffff;
+    background-color: #777777;
+}
+.tabs {
+    border: 1px solid black;
+    padding: 5px;
+}
+img {
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.foodLabels {
+    text-align: center;
+    font-size: 18px;
+}
+/* End Food Tabs */
+
+/* Receptionist Home Page */
+.pageButton {
+    width: 250px;
+    color: #000000;
+    background-color: #cac8c8;
+    border-radius:3px;
+    font-size: 18px;
+    border: 0px solid #2d63c8;
+    padding: 6px 35px;
+    cursor: pointer
+}
+.pageButton:hover {
+    color: #ffffff;
+    background-color: #0a6302;
+}
+/*  */
+
+.tableClass0 {
+    margin-left: auto;
+    margin-right: auto;
+}

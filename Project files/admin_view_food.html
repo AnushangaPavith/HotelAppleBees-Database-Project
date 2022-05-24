@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Details Admin</title>
+    
+    <!-- CSS style -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <script>
+        function openTab(tabName) {
+            var i;
+            var x = document.getElementsByClassName("food");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+            }
+    </script>
+</head>
+<body>
+    <h1>Food Details</h1>
+    <div class = "tabsArray">
+
+        <div class="tabButtons">
+            <button class="tabButton" onclick="openTab('buffet')">Buffet</button>
+            <button class="tabButton" onclick="openTab('dessert')">Dessert</button>
+            <button class="tabButton" onclick="openTab('tea')">Tea</button>
+            <button class="tabButton" onclick="openTab('beverages')">Beverages</button>
+        </div>
+
+        <div class="tabs">
+            <div id="buffet" class="food">
+                <h2>Buffet</h2>
+                <table class="GeneratedTable">
+                    <tbody>
+                        <tr>
+                            <td><img src="images/rice_and_curry.jpg" alt="Rice & Curry" style="width: 300px;"></td>
+                            <td><img src="images/chicken_rice.jpg" alt="Chicken Rice" style="width: 260px;"></td>
+                            <td><img src="images/seafood_rice.jpeg" alt="Seafood Rice" style="width: 225px;"></td>
+                        </tr>
+                        <tr>
+                            <td class="foodLabels">Rice & Curry</td>
+                            <td class="foodLabels">Chicken Fried Rice</td>
+                            <td class="foodLabels">SeaFood Fried Rice</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/noodles1.jpeg" alt="Noodles" style="width: 300px;"></td>
+                            <td><img src="images/koththu.jpeg" alt="Koththu" style="width: 260px;"></td>
+                            <td><img src="images/pasta.jpeg" alt="Pasta" style="width: 250px;"></td>
+                        </tr>
+                        <tr>
+                            <td class="foodLabels">Noodles</td>
+                            <td class="foodLabels">Koththu</td>
+                            <td class="foodLabels">Pasta</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div id="dessert" class="food" style="display: none">
+                <h2>Dessert</h2>
+                <table class="GeneratedTable">
+                    <tbody>
+                        <tr>
+                            <td><img src="images/caramel_pudding.jpg" alt="Caramel Pudding" style="width: 260px;"></td>
+                            <td><img src="images/strawberry_pudding.jpg" alt="Strawberry Pudding" style="width: 260px;"></td>
+                            <td><img src="images/ice_cream.jpg" alt="Ice Cream" style="width: 260px;"></td>
+                        </tr>
+                        <tr>
+                            <td class="foodLabels">Caramel Pudding</td>
+                            <td class="foodLabels">Strawberry Pudding</td>
+                            <td class="foodLabels">Ice Cream</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/oreo_brownie.jpg" alt="Oreo Brownie" style="width: 260px;"></td>
+                            <td><img src="images/cup_cake.jpg" alt="Cup Cake" style="width: 260px;"></td>
+                            <td><img src="images/lava_cake.jpg" alt="Lava Cake" style="width: 260px;"></td>
+                        </tr>
+                        <tr>
+                            <td class="foodLabels">Oreo Brownie</td>
+                            <td class="foodLabels">Cup Cake</td>
+                            <td class="foodLabels">Lava Cake</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="tea" class="food" style="display: none">
+                <h2>Tea</h2>
+            </div>
+            <div id="beverages" class="food" style="display: none">
+                <h2>Beverages</h2>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

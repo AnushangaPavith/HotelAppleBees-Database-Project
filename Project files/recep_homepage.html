@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptionist Home Page</title>
+
+    <!-- CSS style -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img class="logo" src="images/applebeesIcon.jpeg" alt="logo home">
+        <nav>
+            <ul class="navLinks">
+                <li><a class="headerA" href="recep_homepage.html">Home</a></li>
+                <li><a class="headerA" href="recep_reg_guest.php">Register</a></li>
+                <li><a class="headerA" href="recep_view_guest.php">View</a></li>
+                <li><a class="headerA" href="#">Update</a></li>
+                <li><a class="headerA" href="recep_delete_guest.php">Delete</a></li>
+                <li><a class="headerA" href="recep_view_roomList.php">Rooms</a></li>
+                <li><a class="headerA" href="#">Bill</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button class="headerButton">Logout</button></a>
+    </header>
+    <!-- End of Header -->
+
+    <h1>Receptionist</h1>
+    <div class = "buttonArray1">
+        <table class="GeneratedTable">
+            <tbody>
+            <tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>
+
+            <tr>
+                <td><button id="regGuestBtn" class="pageButton" onclick="location.href = 'recep_reg_guest.php'">Register a Guest</button></td>
+                <td><button id="updGuestBtn" class="pageButton" onclick="location.href = 'recep_update_guest.php'">Update Guest Details</button></td>
+            </tr>
+            <tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>
+            <tr>
+                <td><button id="viewGuestBtn" class="pageButton" onclick="location.href = 'recep_view_guest.php'">View Guests</button></td>
+                <td><button id="deleteGuestBtn" class="pageButton" onclick="location.href = 'recep_delete_guest.php'">Delete a Guest</button></td>
+            </tr>
+            <tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>
+            <tr>
+                <td><button id="viewRoomsBtn" class="pageButton" onclick="location.href = 'recep_view_roomList.php'">View Rooms</button></td>
+                <td><button id="billPayBtn" class="pageButton" onclick="">Bill Payments</button></td>
+            </tr>
+            <tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><button id="mkReservation" class="pageButton" onclick="location.href = ''">Make Reservation</button></td>
+            </tr>
+
+            </tbody>
+            </table>
+
+    </div>
+    
+</body>
+</html>
