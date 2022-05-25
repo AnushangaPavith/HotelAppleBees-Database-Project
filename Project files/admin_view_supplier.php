@@ -1,7 +1,6 @@
 <?php include_once 'includes/db.inc.php';?>
 <script src="includes/sweetalert.min.js"></script>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

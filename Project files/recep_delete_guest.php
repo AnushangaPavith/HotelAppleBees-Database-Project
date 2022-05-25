@@ -1,6 +1,5 @@
-<?php
-    include_once 'includes/db.inc.php';
-?>
+<?php include_once 'includes/db.inc.php'; ?>
+<script src="includes/sweetalert.min.js"></script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,6 +27,7 @@
                 <td><input class="deleteInput" type="text" id="deleteGuestID" name="deleteGuestID" placeholder="Guest ID that want to delete"></td>
                 <td><input type="submit" class="deleteBtn" name="delete" value="Delete"></input></td>
             </tr>
+            <tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>
         </tbody>
     </table>
 </form>
@@ -50,12 +50,18 @@
             $results = mysqli_query($conn, $sql);
             if($results == TRUE) {
                 $resultsCheck = 0;
-                echo "Successfully Deleted";
                 // Put a message
+                echo "<script>swal({
+                    title: \"You deleted the Guest!\",
+                    icon: \"info\",
+                  });</script>";
             }
             else {
                 $resultsCheck = 0;
-                echo "An error occurred";
+                echo "<script>swal({
+                    title: \"You deleted the Guest!\",
+                    icon: \"error\",
+                  });</script>";
             }
         }
     }
@@ -87,7 +93,7 @@
 <div class = "dataTable">
     <table class="GeneratedTable">
         <tbody>
-            <tr><th>Guest ID</th><th>Guest Name</th><th>Guest Address</th><th>Guest NIC</th><th>Guest Country</th></tr>
+            <tr><th>Guest ID</th><th>Guest Name</th><th>Guest Address</th><th>Guest NIC</th><th>Country</th><th>Tel num</th><th>email</th><th>Registered Date</th></tr>
         <?php
             if($resultsCheck > 0) {
                 foreach ($results as $row) {
